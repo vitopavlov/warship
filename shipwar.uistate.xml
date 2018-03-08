@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2uistate>
+    <!--This is a UI state file - its content describes the user interface settings when the project was last open.
+It is entirely optional and the project will load without it.  If you are placing the project under source control,
+you probably do not want to add any .uistate.xml files to the repository.-->
+    <configurations>
+        <active>
+            <configuration name="HTML5" />
+        </active>
+        <display name="HTML5" />
+    </configurations>
+    <open-tabs>
+        <layout order="0">lobby</layout>
+        <layout active="1" order="2">game</layout>
+        <event-sheet order="1">Event sheet 1</event-sheet>
+        <event-sheet order="3">Event sheet 2</event-sheet>
+    </open-tabs>
+    <properties>
+        <property expanded="1" name="About" />
+        <property expanded="1" name="Project settings" />
+        <property expanded="0" name="Window Size" />
+        <property expanded="1" name="Configuration Settings" />
+    </properties>
+    <families-expanded root="1" />
+    <folders-expanded>
+        <folder expanded="1" path="object-folder/" />
+        <folder expanded="1" path="layout-folder/" />
+        <folder expanded="1" path="event-folder/" />
+        <folder expanded="1" path="file-folder/" />
+        <folder expanded="1" path="sound-folder/" />
+        <folder expanded="1" path="music-folder/" />
+        <folder expanded="0" path="file-folder/Icons/" />
+        <folder expanded="1" path="animation-folder/Sprite/" />
+        <folder expanded="1" path="animation-folder/Sprite2/" />
+        <folder expanded="1" path="animation-folder/cell/" />
+        <folder expanded="1" path="animation-folder/cellhost2/" />
+        <folder expanded="1" path="animation-folder/cell2/" />
+        <folder expanded="1" path="animation-folder/cell3/" />
+        <folder expanded="1" path="animation-folder/cell4/" />
+        <folder expanded="1" path="animation-folder/cell5/" />
+        <folder expanded="1" path="animation-folder/cell6/" />
+        <folder expanded="1" path="animation-folder/cell7/" />
+        <folder expanded="1" path="animation-folder/cell8/" />
+        <folder expanded="1" path="animation-folder/cell9/" />
+        <folder expanded="1" path="animation-folder/cell10/" />
+        <folder expanded="1" path="animation-folder/cell11/" />
+        <folder expanded="1" path="animation-folder/cell12/" />
+        <folder expanded="1" path="animation-folder/cell13/" />
+        <folder expanded="1" path="animation-folder/cell14/" />
+        <folder expanded="1" path="animation-folder/cell15/" />
+        <folder expanded="1" path="animation-folder/cell16/" />
+        <folder expanded="1" path="animation-folder/cell17/" />
+        <folder expanded="1" path="animation-folder/cell18/" />
+        <folder expanded="1" path="animation-folder/cell19/" />
+        <folder expanded="1" path="animation-folder/cell20/" />
+        <folder expanded="1" path="animation-folder/cell21/" />
+        <folder expanded="1" path="animation-folder/cell22/" />
+        <folder expanded="1" path="animation-folder/cell23/" />
+        <folder expanded="1" path="animation-folder/cell24/" />
+        <folder expanded="1" path="animation-folder/cell25/" />
+        <folder expanded="1" path="animation-folder/cell26/" />
+        <folder expanded="1" path="animation-folder/cell27/" />
+        <folder expanded="1" path="animation-folder/cell28/" />
+        <folder expanded="1" path="animation-folder/cell29/" />
+        <folder expanded="1" path="animation-folder/cell30/" />
+        <folder expanded="1" path="animation-folder/cell31/" />
+        <folder expanded="1" path="animation-folder/cell32/" />
+        <folder expanded="1" path="animation-folder/cell33/" />
+        <folder expanded="1" path="animation-folder/cell34/" />
+        <folder expanded="1" path="animation-folder/cell35/" />
+        <folder expanded="1" path="animation-folder/cell36/" />
+        <folder expanded="1" path="animation-folder/cell37/" />
+        <folder expanded="1" path="animation-folder/cell38/" />
+        <folder expanded="1" path="animation-folder/cell39/" />
+        <folder expanded="1" path="animation-folder/cell40/" />
+        <folder expanded="1" path="animation-folder/cell41/" />
+        <folder expanded="1" path="animation-folder/cell42/" />
+        <folder expanded="1" path="animation-folder/cell43/" />
+        <folder expanded="1" path="animation-folder/cell44/" />
+        <folder expanded="1" path="animation-folder/cell45/" />
+        <folder expanded="1" path="animation-folder/cell46/" />
+        <folder expanded="1" path="animation-folder/cell47/" />
+        <folder expanded="1" path="animation-folder/cell48/" />
+        <folder expanded="1" path="animation-folder/cell49/" />
+        <folder expanded="1" path="animation-folder/cell50/" />
+        <folder expanded="1" path="animation-folder/cell51/" />
+        <folder expanded="1" path="animation-folder/cell52/" />
+        <folder expanded="1" path="animation-folder/cell53/" />
+        <folder expanded="1" path="animation-folder/cell54/" />
+        <folder expanded="1" path="animation-folder/cell55/" />
+        <folder expanded="1" path="animation-folder/cell56/" />
+        <folder expanded="1" path="animation-folder/cell57/" />
+        <folder expanded="1" path="animation-folder/cell58/" />
+        <folder expanded="1" path="animation-folder/cell59/" />
+        <folder expanded="1" path="animation-folder/cell60/" />
+        <folder expanded="1" path="animation-folder/cell61/" />
+        <folder expanded="1" path="animation-folder/cell62/" />
+        <folder expanded="1" path="animation-folder/cell63/" />
+        <folder expanded="1" path="animation-folder/cell64/" />
+        <folder expanded="1" path="animation-folder/cell65/" />
+        <folder expanded="1" path="animation-folder/cell66/" />
+        <folder expanded="1" path="animation-folder/cell67/" />
+        <folder expanded="1" path="animation-folder/cell68/" />
+        <folder expanded="1" path="animation-folder/cell69/" />
+        <folder expanded="1" path="animation-folder/cell70/" />
+        <folder expanded="1" path="animation-folder/cell71/" />
+        <folder expanded="1" path="animation-folder/cell72/" />
+        <folder expanded="1" path="animation-folder/cell73/" />
+        <folder expanded="1" path="animation-folder/cell74/" />
+    </folders-expanded>
+</c2uistate>

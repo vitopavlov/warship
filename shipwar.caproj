@@ -1,0 +1,1269 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>shipwar</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.pvitogame.shipwar</app-id>
+    <unique-id>3jyw2uznv228b</unique-id>
+    <saved-with-version>25500</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Arr" version="1">Array</plugin>
+        <plugin author="Scirra" id="Button" version="1">Button</plugin>
+        <plugin author="Scirra" id="Function" version="1">Function</plugin>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="List" version="1">List</plugin>
+        <plugin author="Scirra" id="Multiplayer" version="1">Multiplayer</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="TextBox" version="1">Text box</plugin>
+    </used-plugins>
+    <used-behaviors />
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>854</width>
+        <height>480</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Construct 2 splash</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">Chrome</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="NameTextBox" sid="532662189997758">
+            <plugin id="TextBox" />
+        </object-type>
+        <object-type name="Button" sid="263084585756243">
+            <plugin id="Button" />
+        </object-type>
+        <object-type name="Multiplayer" sid="442517897425310">
+            <plugin id="Multiplayer" />
+        </object-type>
+        <object-type name="info" sid="104096035706269">
+            <plugin id="TextBox" />
+        </object-type>
+        <object-type name="List" sid="641748184602041">
+            <plugin id="List" />
+        </object-type>
+        <object-type name="create" sid="591635862592591">
+            <plugin id="Button" />
+        </object-type>
+        <object-type name="createroom" sid="427183378794761">
+            <plugin id="TextBox" />
+        </object-type>
+        <object-type name="game" sid="498231553679308">
+            <plugin id="TextBox" />
+        </object-type>
+        <object-type name="CountPlayers" sid="772859043588266">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="CPl" sid="476457235462281">
+            <plugin id="TextBox" />
+        </object-type>
+        <object-type name="Text" sid="235356542724969">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="ChatBox" sid="819155160345641">
+            <plugin id="TextBox" />
+        </object-type>
+        <object-type name="ChatButton" sid="831081478831419">
+            <plugin id="Button" />
+        </object-type>
+        <object-type name="chat" sid="687024180037165">
+            <plugin id="TextBox" />
+        </object-type>
+        <object-type name="Keyboard" sid="657225732426393">
+            <plugin id="Keyboard" />
+        </object-type>
+        <object-type name="Function" sid="114826141005890">
+            <plugin id="Function" />
+        </object-type>
+        <object-type name="leveRoom" sid="356744958836541">
+            <plugin id="Button" />
+        </object-type>
+        <object-type global="1" name="AHost" sid="675440994936018">
+            <plugin id="Arr" />
+        </object-type>
+        <object-type global="1" name="APeer" sid="313341230296862">
+            <plugin id="Arr" />
+        </object-type>
+        <object-type name="Sprite" sid="760673474202912">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="724749688240288" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.515625" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.515625" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.515625" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite2" sid="818430834421050">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="297864422555551" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.508108" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.508108" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.508108" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="cell" sid="390693153611638">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable comment="состояние" name="consist" sid="869051956715196" type="number" />
+                <instance-variable comment="адрес ячейки" name="adress" sid="698660218933452" type="string" />
+                <instance-variable comment="поле 0-свой, 1-враг" name="whos" sid="902136194330021" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="897912184669598" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="cellhost2" sid="656445570689430">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable comment="состояние" name="consist" sid="978447761453426" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="646924657959088" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="cell2" sid="598959061027886">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable comment="состояние" name="consist" sid="153340341593580" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="585032942277300" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="cell3" sid="658910228699542">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable comment="состояние" name="consist" sid="855345619461274" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="824558993318677" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="cell4" sid="272791679550459">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable comment="состояние" name="consist" sid="364948760123648" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="761391845268344" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="cell5" sid="192622630593414">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable comment="состояние" name="consist" sid="723745622245203" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="392889288162206" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="cell6" sid="532283888023873">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable comment="состояние" name="consist" sid="213523170069418" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="512589070296428" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="cell7" sid="877637063098124">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable comment="состояние" name="consist" sid="817337108786501" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="623985402993107" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type global="1" name="APrototype" sid="113926206435417">
+            <plugin id="Arr" />
+        </object-type>
+        <object-type name="cell8" sid="355347023673194">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable comment="состояние" name="consist" sid="125095052983773" type="number" />
+                <instance-variable comment="адрес ячейки" name="adress" sid="597194944528828" type="string" />
+                <instance-variable comment="поле 0-свой, 1-враг" name="whos" sid="238158627160835" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="971958271245579" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="cell9" sid="915401749099180">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable comment="состояние" name="consist" sid="846628966782977" type="number" />
+                <instance-variable comment="адрес ячейки" name="adress" sid="300569128936632" type="string" />
+                <instance-variable comment="поле 0-свой, 1-враг" name="whos" sid="404243573919079" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="906249724436396" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="cell10" sid="944820519280961">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable comment="состояние" name="consist" sid="358845026337803" type="number" />
+                <instance-variable comment="адрес ячейки" name="adress" sid="338398355028144" type="string" />
+                <instance-variable comment="поле 0-свой, 1-враг" name="whos" sid="702535736246198" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="223425591015886" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="cell11" sid="155474450114858">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable comment="состояние" name="consist" sid="709198665039093" type="number" />
+                <instance-variable comment="адрес ячейки" name="adress" sid="764457044092954" type="string" />
+                <instance-variable comment="поле 0-свой, 1-враг" name="whos" sid="940169899539742" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="957361632862088" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="cell12" sid="762571007696450">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable comment="состояние" name="consist" sid="839115852618356" type="number" />
+                <instance-variable comment="адрес ячейки" name="adress" sid="351880795734508" type="string" />
+                <instance-variable comment="поле 0-свой, 1-враг" name="whos" sid="563146386475276" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="249153849020144" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="cell13" sid="607192769815292">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable comment="состояние" name="consist" sid="293217455136413" type="number" />
+                <instance-variable comment="адрес ячейки" name="adress" sid="219031857632083" type="string" />
+                <instance-variable comment="поле 0-свой, 1-враг" name="whos" sid="368412546642358" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="935547049377522" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="cell14" sid="721176979200315">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable comment="состояние" name="consist" sid="265554274307523" type="number" />
+                <instance-variable comment="адрес ячейки" name="adress" sid="977809705764766" type="string" />
+                <instance-variable comment="поле 0-свой, 1-враг" name="whos" sid="127545849426571" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="264885970962239" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="cell15" sid="702461465878145">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable comment="состояние" name="consist" sid="389084836580223" type="number" />
+                <instance-variable comment="адрес ячейки" name="adress" sid="249871152765204" type="string" />
+                <instance-variable comment="поле 0-свой, 1-враг" name="whos" sid="882298738591025" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="594346563112641" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="cell16" sid="979126025743603">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable comment="состояние" name="consist" sid="337057454717927" type="number" />
+                <instance-variable comment="адрес ячейки" name="adress" sid="730539029821821" type="string" />
+                <instance-variable comment="поле 0-свой, 1-враг" name="whos" sid="790395672905395" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="115037232851237" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="cell17" sid="802117277202275">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable comment="состояние" name="consist" sid="224662402426179" type="number" />
+                <instance-variable comment="адрес ячейки" name="adress" sid="168825129538853" type="string" />
+                <instance-variable comment="поле 0-свой, 1-враг" name="whos" sid="543178306227866" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="774847829028419" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="cell18" sid="277986688190803">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable comment="состояние" name="consist" sid="189084995012105" type="number" />
+                <instance-variable comment="адрес ячейки" name="adress" sid="890078091637549" type="string" />
+                <instance-variable comment="поле 0-свой, 1-враг" name="whos" sid="414356836624393" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="207287453866170" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="cell19" sid="352064378212356">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable comment="состояние" name="consist" sid="932075157155363" type="number" />
+                <instance-variable comment="адрес ячейки" name="adress" sid="854500550525437" type="string" />
+                <instance-variable comment="поле 0-свой, 1-враг" name="whos" sid="375456861042554" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="406469851222204" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="cell20" sid="509591283935015">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable comment="состояние" name="consist" sid="213379898787509" type="number" />
+                <instance-variable comment="адрес ячейки" name="adress" sid="521117996744582" type="string" />
+                <instance-variable comment="поле 0-свой, 1-враг" name="whos" sid="689843468906349" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="126883420119677" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="cell21" sid="524033320532721">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable comment="состояние" name="consist" sid="142682244418233" type="number" />
+                <instance-variable comment="адрес ячейки" name="adress" sid="550369055616732" type="string" />
+                <instance-variable comment="поле 0-свой, 1-враг" name="whos" sid="313224291716108" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="520105828852787" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="cell22" sid="711824653943674">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable comment="состояние" name="consist" sid="433380926550163" type="number" />
+                <instance-variable comment="адрес ячейки" name="adress" sid="609139211327606" type="string" />
+                <instance-variable comment="поле 0-свой, 1-враг" name="whos" sid="740980019998214" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="435528672850885" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="cell23" sid="505969831674781">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable comment="состояние" name="consist" sid="156076555067916" type="number" />
+                <instance-variable comment="адрес ячейки" name="adress" sid="566620900467284" type="string" />
+                <instance-variable comment="поле 0-свой, 1-враг" name="whos" sid="676739262310573" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="551583075924408" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="cell24" sid="883008796392553">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable comment="состояние" name="consist" sid="432495638165426" type="number" />
+                <instance-variable comment="адрес ячейки" name="adress" sid="154226607311520" type="string" />
+                <instance-variable comment="поле 0-свой, 1-враг" name="whos" sid="858270072912704" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="225401732206227" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="cell25" sid="721589084988760">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable comment="состояние" name="consist" sid="200122073975827" type="number" />
+                <instance-variable comment="адрес ячейки" name="adress" sid="917721293052334" type="string" />
+                <instance-variable comment="поле 0-свой, 1-враг" name="whos" sid="837543118571533" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="765245354634118" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="cell26" sid="597620770901769">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable comment="состояние" name="consist" sid="935733024419747" type="number" />
+                <instance-variable comment="адрес ячейки" name="adress" sid="330872041549106" type="string" />
+                <instance-variable comment="поле 0-свой, 1-враг" name="whos" sid="704742498367965" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="228705551679889" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="cell27" sid="522591971987356">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable comment="состояние" name="consist" sid="682157719705452" type="number" />
+                <instance-variable comment="адрес ячейки" name="adress" sid="948937334024447" type="string" />
+                <instance-variable comment="поле 0-свой, 1-враг" name="whos" sid="225570627084320" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="588778856959386" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="cell28" sid="739287060470181">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable comment="состояние" name="consist" sid="224164079720722" type="number" />
+                <instance-variable comment="адрес ячейки" name="adress" sid="242611930594046" type="string" />
+                <instance-variable comment="поле 0-свой, 1-враг" name="whos" sid="938889321399935" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="606012456230725" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="cell29" sid="262145976406088">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable comment="состояние" name="consist" sid="442735940175252" type="number" />
+                <instance-variable comment="адрес ячейки" name="adress" sid="322243984359407" type="string" />
+                <instance-variable comment="поле 0-свой, 1-враг" name="whos" sid="994497633697922" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="492495333639965" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="cell30" sid="594720416046100">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable comment="состояние" name="consist" sid="280940184425277" type="number" />
+                <instance-variable comment="адрес ячейки" name="adress" sid="370155415339484" type="string" />
+                <instance-variable comment="поле 0-свой, 1-враг" name="whos" sid="368501215522265" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="507154384033175" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="cell31" sid="171090678372161">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable comment="состояние" name="consist" sid="572738887522947" type="number" />
+                <instance-variable comment="адрес ячейки" name="adress" sid="176795112344033" type="string" />
+                <instance-variable comment="поле 0-свой, 1-враг" name="whos" sid="206108012866391" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="940310696416660" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="cell32" sid="685258362883973">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable comment="состояние" name="consist" sid="545953527166940" type="number" />
+                <instance-variable comment="адрес ячейки" name="adress" sid="846738046859085" type="string" />
+                <instance-variable comment="поле 0-свой, 1-враг" name="whos" sid="508554601158142" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="389185762091880" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="cell33" sid="131265748105115">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable comment="состояние" name="consist" sid="300261163272307" type="number" />
+                <instance-variable comment="адрес ячейки" name="adress" sid="179289677313917" type="string" />
+                <instance-variable comment="поле 0-свой, 1-враг" name="whos" sid="960134916481290" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="722529516475037" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="cell34" sid="673857646661138">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable comment="состояние" name="consist" sid="248155415330535" type="number" />
+                <instance-variable comment="адрес ячейки" name="adress" sid="862572277234407" type="string" />
+                <instance-variable comment="поле 0-свой, 1-враг" name="whos" sid="401655827066724" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="255022761686399" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="cell35" sid="694874579048983">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable comment="состояние" name="consist" sid="265294652792215" type="number" />
+                <instance-variable comment="адрес ячейки" name="adress" sid="972062796032245" type="string" />
+                <instance-variable comment="поле 0-свой, 1-враг" name="whos" sid="283258848446598" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="237865857227864" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="cell36" sid="992246264072568">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable comment="состояние" name="consist" sid="866853304878911" type="number" />
+                <instance-variable comment="адрес ячейки" name="adress" sid="167249538205254" type="string" />
+                <instance-variable comment="поле 0-свой, 1-враг" name="whos" sid="706648335784506" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="515715891709005" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="cell37" sid="595053923271164">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable comment="состояние" name="consist" sid="464060105803221" type="number" />
+                <instance-variable comment="адрес ячейки" name="adress" sid="608358886572040" type="string" />
+                <instance-variable comment="поле 0-свой, 1-враг" name="whos" sid="737843383968447" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="290288829411376" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="cell38" sid="139781902035821">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable comment="состояние" name="consist" sid="247765675529275" type="number" />
+                <instance-variable comment="адрес ячейки" name="adress" sid="456016664768024" type="string" />
+                <instance-variable comment="поле 0-свой, 1-враг" name="whos" sid="671245350937701" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="356886997124738" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="cell39" sid="655312949411309">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable comment="состояние" name="consist" sid="993579985714614" type="number" />
+                <instance-variable comment="адрес ячейки" name="adress" sid="707391887333221" type="string" />
+                <instance-variable comment="поле 0-свой, 1-враг" name="whos" sid="871735272979577" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="957692510301738" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="cell40" sid="213422334257504">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable comment="состояние" name="consist" sid="289653182731654" type="number" />
+                <instance-variable comment="адрес ячейки" name="adress" sid="541545407578247" type="string" />
+                <instance-variable comment="поле 0-свой, 1-враг" name="whos" sid="416963044914288" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="519065689667949" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="cell41" sid="807244666536717">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable comment="состояние" name="consist" sid="477361122759509" type="number" />
+                <instance-variable comment="адрес ячейки" name="adress" sid="702768246123412" type="string" />
+                <instance-variable comment="поле 0-свой, 1-враг" name="whos" sid="457583783202429" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="483294487462218" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="cell42" sid="371808464234564">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable comment="состояние" name="consist" sid="182550905043513" type="number" />
+                <instance-variable comment="адрес ячейки" name="adress" sid="450818143376349" type="string" />
+                <instance-variable comment="поле 0-свой, 1-враг" name="whos" sid="496364875562307" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="964453243752667" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="cell43" sid="127140563756674">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable comment="состояние" name="consist" sid="435535814949482" type="number" />
+                <instance-variable comment="адрес ячейки" name="adress" sid="446608371067893" type="string" />
+                <instance-variable comment="поле 0-свой, 1-враг" name="whos" sid="469124635332864" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="629155228597318" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="cell44" sid="720549564859513">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable comment="состояние" name="consist" sid="366711815894072" type="number" />
+                <instance-variable comment="адрес ячейки" name="adress" sid="661473909223700" type="string" />
+                <instance-variable comment="поле 0-свой, 1-враг" name="whos" sid="281085986150140" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="847665273670020" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="cell45" sid="694172910522091">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable comment="состояние" name="consist" sid="498308306015585" type="number" />
+                <instance-variable comment="адрес ячейки" name="adress" sid="717724751286627" type="string" />
+                <instance-variable comment="поле 0-свой, 1-враг" name="whos" sid="402621760018619" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="365649120517078" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="cell46" sid="826900936855754">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable comment="состояние" name="consist" sid="134554032027529" type="number" />
+                <instance-variable comment="адрес ячейки" name="adress" sid="432873830009752" type="string" />
+                <instance-variable comment="поле 0-свой, 1-враг" name="whos" sid="801933839698419" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="473461155535910" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="cell47" sid="277008958119665">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable comment="состояние" name="consist" sid="529041463112843" type="number" />
+                <instance-variable comment="адрес ячейки" name="adress" sid="162283306090258" type="string" />
+                <instance-variable comment="поле 0-свой, 1-враг" name="whos" sid="133445745225713" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="993307008062370" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="cell48" sid="168196096668448">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable comment="состояние" name="consist" sid="685634777028807" type="number" />
+                <instance-variable comment="адрес ячейки" name="adress" sid="514690264341160" type="string" />
+                <instance-variable comment="поле 0-свой, 1-враг" name="whos" sid="433920430337246" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="561738579041451" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="cell49" sid="999204325197075">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable comment="состояние" name="consist" sid="347504048094219" type="number" />
+                <instance-variable comment="адрес ячейки" name="adress" sid="694932311960258" type="string" />
+                <instance-variable comment="поле 0-свой, 1-враг" name="whos" sid="754953537416879" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="598152094179964" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="cell50" sid="776019995704330">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable comment="состояние" name="consist" sid="681728590294531" type="number" />
+                <instance-variable comment="адрес ячейки" name="adress" sid="869097967074636" type="string" />
+                <instance-variable comment="поле 0-свой, 1-враг" name="whos" sid="786231955928085" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="382321216307465" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="cell51" sid="704832629883797">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable comment="состояние" name="consist" sid="334567110023101" type="number" />
+                <instance-variable comment="адрес ячейки" name="adress" sid="509009780310550" type="string" />
+                <instance-variable comment="поле 0-свой, 1-враг" name="whos" sid="158353716964328" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="628172097681685" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="cell52" sid="495875492520472">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable comment="состояние" name="consist" sid="508633447106461" type="number" />
+                <instance-variable comment="адрес ячейки" name="adress" sid="461876475599526" type="string" />
+                <instance-variable comment="поле 0-свой, 1-враг" name="whos" sid="936118440564448" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="300872030795523" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="cell53" sid="175109331589470">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable comment="состояние" name="consist" sid="197645817909397" type="number" />
+                <instance-variable comment="адрес ячейки" name="adress" sid="684696532776250" type="string" />
+                <instance-variable comment="поле 0-свой, 1-враг" name="whos" sid="568190896494962" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="516466636110810" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="cell54" sid="589380563243109">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable comment="состояние" name="consist" sid="522072168052674" type="number" />
+                <instance-variable comment="адрес ячейки" name="adress" sid="730670264225810" type="string" />
+                <instance-variable comment="поле 0-свой, 1-враг" name="whos" sid="239217230346847" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="288850040509023" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="cell55" sid="151302558970977">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable comment="состояние" name="consist" sid="887023297060749" type="number" />
+                <instance-variable comment="адрес ячейки" name="adress" sid="901209427417587" type="string" />
+                <instance-variable comment="поле 0-свой, 1-враг" name="whos" sid="406194583883744" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="329001343922075" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="cell56" sid="375689146740987">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable comment="состояние" name="consist" sid="129140316239939" type="number" />
+                <instance-variable comment="адрес ячейки" name="adress" sid="250949918652722" type="string" />
+                <instance-variable comment="поле 0-свой, 1-враг" name="whos" sid="762699834719929" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="895708207369824" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="cell57" sid="525491548454677">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable comment="состояние" name="consist" sid="330323138030785" type="number" />
+                <instance-variable comment="адрес ячейки" name="adress" sid="702331539421499" type="string" />
+                <instance-variable comment="поле 0-свой, 1-враг" name="whos" sid="102129777178511" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="827698805007494" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="cell58" sid="517278199296468">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable comment="состояние" name="consist" sid="226056724248637" type="number" />
+                <instance-variable comment="адрес ячейки" name="adress" sid="370863936855687" type="string" />
+                <instance-variable comment="поле 0-свой, 1-враг" name="whos" sid="974096657113792" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="243633785109115" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="cell59" sid="682328049475964">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable comment="состояние" name="consist" sid="754905342488019" type="number" />
+                <instance-variable comment="адрес ячейки" name="adress" sid="137256438554681" type="string" />
+                <instance-variable comment="поле 0-свой, 1-враг" name="whos" sid="416139154417874" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="166696367662692" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="cell60" sid="711671790699864">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable comment="состояние" name="consist" sid="544234857587257" type="number" />
+                <instance-variable comment="адрес ячейки" name="adress" sid="515303563833640" type="string" />
+                <instance-variable comment="поле 0-свой, 1-враг" name="whos" sid="452718514975749" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="887633373871766" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="cell61" sid="182937364887311">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable comment="состояние" name="consist" sid="954513384440130" type="number" />
+                <instance-variable comment="адрес ячейки" name="adress" sid="277679662653702" type="string" />
+                <instance-variable comment="поле 0-свой, 1-враг" name="whos" sid="919010400186269" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="910360376067942" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="cell62" sid="290497963912309">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable comment="состояние" name="consist" sid="861720419032476" type="number" />
+                <instance-variable comment="адрес ячейки" name="adress" sid="887955222280341" type="string" />
+                <instance-variable comment="поле 0-свой, 1-враг" name="whos" sid="944623985283101" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="805237091932532" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="cell63" sid="264273451734308">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable comment="состояние" name="consist" sid="902909788473771" type="number" />
+                <instance-variable comment="адрес ячейки" name="adress" sid="634394715574042" type="string" />
+                <instance-variable comment="поле 0-свой, 1-враг" name="whos" sid="860512852484292" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="126947795376219" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="cell64" sid="134915575351154">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable comment="состояние" name="consist" sid="598297071390705" type="number" />
+                <instance-variable comment="адрес ячейки" name="adress" sid="117737051423996" type="string" />
+                <instance-variable comment="поле 0-свой, 1-враг" name="whos" sid="440700215906953" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="839260922828623" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="cell65" sid="921157404070018">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable comment="состояние" name="consist" sid="883579758652667" type="number" />
+                <instance-variable comment="адрес ячейки" name="adress" sid="522476088126090" type="string" />
+                <instance-variable comment="поле 0-свой, 1-враг" name="whos" sid="728157566609992" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="117434186999640" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="cell66" sid="426162034950195">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable comment="состояние" name="consist" sid="352814579749964" type="number" />
+                <instance-variable comment="адрес ячейки" name="adress" sid="570824510616430" type="string" />
+                <instance-variable comment="поле 0-свой, 1-враг" name="whos" sid="934590992515350" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="348379867539166" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="cell67" sid="412917307173960">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable comment="состояние" name="consist" sid="523242506776878" type="number" />
+                <instance-variable comment="адрес ячейки" name="adress" sid="788593280940540" type="string" />
+                <instance-variable comment="поле 0-свой, 1-враг" name="whos" sid="552353910130877" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="769156650277948" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="cell68" sid="235414010091475">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable comment="состояние" name="consist" sid="245615922145651" type="number" />
+                <instance-variable comment="адрес ячейки" name="adress" sid="962117634068495" type="string" />
+                <instance-variable comment="поле 0-свой, 1-враг" name="whos" sid="177535399954149" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="610418160449731" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="cell69" sid="641901772035546">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable comment="состояние" name="consist" sid="196766111958401" type="number" />
+                <instance-variable comment="адрес ячейки" name="adress" sid="689039167609487" type="string" />
+                <instance-variable comment="поле 0-свой, 1-враг" name="whos" sid="709527190027978" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="861368675083419" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="cell70" sid="681274651196183">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable comment="состояние" name="consist" sid="366325068001260" type="number" />
+                <instance-variable comment="адрес ячейки" name="adress" sid="125630767417860" type="string" />
+                <instance-variable comment="поле 0-свой, 1-враг" name="whos" sid="121974434839869" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="175820384344944" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="cell71" sid="834342013307349">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable comment="состояние" name="consist" sid="371864144639795" type="number" />
+                <instance-variable comment="адрес ячейки" name="adress" sid="249680177220215" type="string" />
+                <instance-variable comment="поле 0-свой, 1-враг" name="whos" sid="948268536776264" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="833800737746670" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="cell72" sid="902365476932701">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable comment="состояние" name="consist" sid="792906648308796" type="number" />
+                <instance-variable comment="адрес ячейки" name="adress" sid="661881713639634" type="string" />
+                <instance-variable comment="поле 0-свой, 1-враг" name="whos" sid="229046649003119" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="140045989159624" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="cell73" sid="826348581119473">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable comment="состояние" name="consist" sid="562240162374764" type="number" />
+                <instance-variable comment="адрес ячейки" name="adress" sid="513403187596268" type="string" />
+                <instance-variable comment="поле 0-свой, 1-враг" name="whos" sid="792546328157920" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="596723390920411" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="cell74" sid="904006570670519">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable comment="состояние" name="consist" sid="700731120927813" type="number" />
+                <instance-variable comment="адрес ячейки" name="adress" sid="422279857445980" type="string" />
+                <instance-variable comment="поле 0-свой, 1-враг" name="whos" sid="837190494901161" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="650353894793688" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>lobby.xml</layout>
+        <layout>game.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Event sheet 1.xml</event-sheet>
+        <event-sheet>Event sheet 2.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Multiplayer" uid="2" />
+        <global-instance type="Keyboard" uid="13" />
+        <global-instance type="Function" uid="14" />
+    </global-instances>
+    <sounds-folder />
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>
