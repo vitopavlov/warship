@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Event sheet 2</name>
     <events>
+        <variable constant="0" name="readycounter" sid="837870385146721" static="0" type="number">0</variable>
         <variable comment="позиция в массиве при расстановке" constant="0" name="numofship" sid="962995591709100" static="0" type="number">0</variable>
         <variable comment="ТИп игры 0-расстановка, 1-ходит хост. 2-ходит пир, 3-игра закончена" constant="0" name="gametype" sid="449260664938930" static="0" type="number">0</variable>
         <event-block sid="992571979733055">
@@ -24,6 +25,10 @@
                             <param id="0" name="Group name">&quot;Host&quot;</param>
                             <param id="1" name="State">1</param>
                         </action>
+                        <action id="-12" name="Set group active" sid="189440169627587" type="System">
+                            <param id="0" name="Group name">&quot;HostPlay&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="128631772229999">
@@ -33,6 +38,10 @@
                     <actions>
                         <action id="-12" name="Set group active" sid="821190292713783" type="System">
                             <param id="0" name="Group name">&quot;Peer&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="539883286400330" type="System">
+                            <param id="0" name="Group name">&quot;PeerPlay&quot;</param>
                             <param id="1" name="State">1</param>
                         </action>
                     </actions>
@@ -268,6 +277,187 @@
                     <param id="0" name="Value">4</param>
                     <param id="1" name="Index">9</param>
                     <param id="2" name="Axis">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="771364950275760">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="829432742934673" type="System" />
+                <condition id="2" inverted="1" name="Mouse button is down" sid="534876210047640" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="883513454897261" type="System">
+                    <param id="0" name="Variable">gametype</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="151981645517543" type="c1">
+                    <param id="0" name="X">floor(c1.X / 32)*32</param>
+                    <param id="1" name="Y">floor(c1.Y / 32)*32</param>
+                </action>
+                <action id="-3" name="Set position" sid="541736749326264" type="c2">
+                    <param id="0" name="X">floor(c2.X / 32)*32</param>
+                    <param id="1" name="Y">floor(c2.Y / 32)*32</param>
+                </action>
+                <action id="-3" name="Set position" sid="792371975897197" type="c3">
+                    <param id="0" name="X">floor(c3.X / 32)*32</param>
+                    <param id="1" name="Y">floor(c3.Y / 32)*32</param>
+                </action>
+                <action id="-3" name="Set position" sid="766634598489761" type="c4">
+                    <param id="0" name="X">floor(c4.X / 32)*32</param>
+                    <param id="1" name="Y">floor(c4.Y / 32)*32</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="404869041780806">
+            <conditions>
+                <condition id="2" name="Mouse button is down" sid="393330148493860" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="292497562613863" type="System">
+                    <param id="0" name="Variable">gametype</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="815173235282429">
+                    <conditions>
+                        <condition id="7" name="Cursor is over object" sid="557137133173685" type="Mouse">
+                            <param id="0" name="Object">c1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="186442842629878" type="c1">
+                            <param id="0" name="X">Mouse.X</param>
+                            <param id="1" name="Y">Mouse.Y</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="905468549026238">
+                    <conditions>
+                        <condition id="7" name="Cursor is over object" sid="979656815413056" type="Mouse">
+                            <param id="0" name="Object">c2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="476628037429983" type="c2">
+                            <param id="0" name="X">Mouse.X</param>
+                            <param id="1" name="Y">Mouse.Y</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="922571516407806">
+                    <conditions>
+                        <condition id="7" name="Cursor is over object" sid="324327694692866" type="Mouse">
+                            <param id="0" name="Object">c3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="181833280930268" type="c3">
+                            <param id="0" name="X">Mouse.X</param>
+                            <param id="1" name="Y">Mouse.Y</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="276778528016492">
+                    <conditions>
+                        <condition id="7" name="Cursor is over object" sid="812575168963107" type="Mouse">
+                            <param id="0" name="Object">c4</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="827312037689479" type="c4">
+                            <param id="0" name="X">Mouse.X</param>
+                            <param id="1" name="Y">Mouse.Y</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="185763179815455">
+            <conditions>
+                <condition id="16" name="On any peer message" sid="397855593149675" type="Multiplayer" />
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="640416093157626" type="System">
+                    <param id="0" name="Variable">readycounter</param>
+                    <param id="1" name="Value">int(Multiplayer.Message)</param>
+                </action>
+                <action id="0" name="Set text" sid="610592733323200" type="textinfo">
+                    <param id="0" name="Text">readycounter</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" inactive="1" sid="946461022252136" title="HostPlay">
+            <sub-events>
+                <event-block sid="827379559604799">
+                    <conditions>
+                        <condition id="0" name="On clicked" sid="360966388960143" type="ReadyButton" />
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Add to" sid="706356703513913" type="System">
+                            <param id="0" name="Variable">readycounter</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="3" name="Set enabled" sid="286293307021282" type="ReadyButton">
+                            <param id="0" name="Mode">0</param>
+                        </action>
+                        <action id="9" name="Broadcast message" sid="248791895566063" type="Multiplayer">
+                            <param id="0" name="From ID">&quot;&quot;</param>
+                            <param id="1" name="Tag">&quot;ready&quot;</param>
+                            <param id="2" name="Message">&quot;1&quot;</param>
+                            <param id="3" name="Mode">0</param>
+                        </action>
+                        <action id="0" name="Set text" sid="216183139275887" type="textinfo">
+                            <param id="0" name="Text">readycounter</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" inactive="1" sid="235822187385377" title="PeerPlay">
+            <sub-events>
+                <event-block sid="256572412107263">
+                    <conditions>
+                        <condition id="0" name="On clicked" sid="913263135339896" type="ReadyButton" />
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Add to" sid="352278111328873" type="System">
+                            <param id="0" name="Variable">readycounter</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="3" name="Set enabled" sid="786811349480346" type="ReadyButton">
+                            <param id="0" name="Mode">0</param>
+                        </action>
+                        <action id="8" name="Send message" sid="924501153598289" type="Multiplayer">
+                            <param id="0" name="Peer ID">Multiplayer.HostID</param>
+                            <param id="1" name="Tag">&quot;ready&quot;</param>
+                            <param id="2" name="Message">&quot;1&quot;</param>
+                            <param id="3" name="Mode">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="957079423099855">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="688206902341700" type="System">
+                    <param id="0" name="Variable">readycounter</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="332204086438053" type="textinfo">
+                    <param id="0" name="Text">&quot;Начинаем игру&quot;</param>
+                </action>
+                <action id="-9" name="Set value" sid="129467913966827" type="System">
+                    <param id="0" name="Variable">gametype</param>
+                    <param id="1" name="Value">1</param>
                 </action>
             </actions>
         </event-block>

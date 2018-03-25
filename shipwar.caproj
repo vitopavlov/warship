@@ -15,6 +15,7 @@
         <plugin author="Scirra" id="Function" version="1">Function</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="List" version="1">List</plugin>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
         <plugin author="Scirra" id="Multiplayer" version="1">Multiplayer</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
@@ -106,26 +107,6 @@
         <object-type global="1" name="APeer" sid="313341230296862">
             <plugin id="Arr" />
         </object-type>
-        <object-type name="Sprite" sid="760673474202912">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="724749688240288" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.515625" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.515625" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.515625" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="Sprite2" sid="818430834421050">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="297864422555551" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.508108" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.508108" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.508108" />
-                </animation>
-            </animation-folder>
-        </object-type>
         <object-type name="c1" sid="390693153611638">
             <plugin id="Sprite" />
             <instance-variables>
@@ -165,7 +146,7 @@
             <plugin id="TiledBg" />
             <texture original-source="D:\Construct-paperwar\fon\fon0001.jpg" />
         </object-type>
-        <object-type name="Sprite3" sid="899742089035625">
+        <object-type name="lineg" sid="899742089035625">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="766731150235694" speed="5">
@@ -173,11 +154,11 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite4" sid="616715402680731">
+        <object-type name="c2" sid="616715402680731">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="a200" pingpong="0" repeatcount="1" repeatto="0" sid="645009500859801" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.515152" original-source="D:\DOC\200.png" />
+                    <frame duration="1" hotspotX="0.257576" hotspotY="0.515152" original-source="D:\DOC\200.png" />
                 </animation>
                 <animation framecount="1" loop="0" name="a201" pingpong="0" repeatcount="1" repeatto="0" sid="753792703040370" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.515152" original-source="D:\DOC\201.png" />
@@ -190,21 +171,30 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite5" sid="488327110841761">
+        <object-type name="c3" sid="488327110841761">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="650662151955478" speed="5">
-                    <frame duration="1" hotspotX="0.50505" hotspotY="0.515152" original-source="D:\DOC\3000.png" />
+                    <frame duration="1" hotspotX="0.171717" hotspotY="0.515152" original-source="D:\DOC\3000.png" />
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite6" sid="685685949418456">
+        <object-type name="c4" sid="685685949418456">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="618275776564836" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.515152" original-source="D:\DOC\40000.png" />
+                    <frame duration="1" hotspotX="0.128788" hotspotY="0.515152" original-source="D:\DOC\40000.png" />
                 </animation>
             </animation-folder>
+        </object-type>
+        <object-type name="Mouse" sid="585565809233629">
+            <plugin id="Mouse" />
+        </object-type>
+        <object-type name="ReadyButton" sid="982761116685944">
+            <plugin id="Button" />
+        </object-type>
+        <object-type name="textinfo" sid="736602746052691">
+            <plugin id="Text" />
         </object-type>
     </object-folder>
     <families />
@@ -220,6 +210,7 @@
         <global-instance type="Multiplayer" uid="2" />
         <global-instance type="Keyboard" uid="13" />
         <global-instance type="Function" uid="14" />
+        <global-instance type="Mouse" uid="30" />
     </global-instances>
     <sounds-folder />
     <music-folder />
